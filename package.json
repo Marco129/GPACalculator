@@ -1,0 +1,13 @@
+{
+  "name": "gpacalculator",
+  "version": "0.0.0",
+  "description": "Single page GPA Calculator using AngularJS",
+  "author": "Marco129",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.5"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.0"
+  }
+}

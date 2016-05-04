@@ -139,3 +139,7 @@ local.properties
 
 # Code Recommenders
 .recommenders/
+
+
+### Project Related ###
+bundle.js
