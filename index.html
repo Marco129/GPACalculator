@@ -24,6 +24,9 @@
 								</tr>
 							</thead>
 							<tbody>
+								<tr ng-hide="courses.length">
+									<td colspan="4" align="center">No subject available</td>
+								</tr>
 								<tr ng-repeat="x in courses track by $index">
 									<td>{{x.course}}</td>
 									<td>{{x.credit}}</td>
