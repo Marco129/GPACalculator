@@ -23,7 +23,7 @@ angular.module('gpa', [])
 				credit_total += value.credit;
 			});
 			if($scope.courses.length > 0){
-				$scope.gpa = total / credit_total;
+				$scope.gpa = parseFloat(total / credit_total).toFixed(2);
 			}else{
 				$scope.gpa = 0;
 			}
