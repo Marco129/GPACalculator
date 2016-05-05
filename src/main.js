@@ -11,6 +11,10 @@ angular.module('gpa', [])
 			$scope.addForm.$setPristine();
 			$scope.calulateGPA();
 		}
+		$scope.remove = function(index){
+			$scope.courses.splice(index, 1);
+			$scope.calulateGPA();
+		}
 		$scope.calulateGPA = function(){
 			var total = 0;
 			var credit_total = 0;

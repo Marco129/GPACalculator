@@ -19,17 +19,19 @@
 								<tr>
 									<th class="col-xs-7">Subject</th>
 									<th class="col-xs-2">Credit</th>
-									<th class="col-xs-3">Grade</th>
+									<th class="col-xs-2">Grade</th>
+									<th class="col-xs-1"></th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr ng-repeat="x in courses">
+								<tr ng-repeat="x in courses track by $index">
 									<td>{{x.course}}</td>
 									<td>{{x.credit}}</td>
 									<td>{{x.grade.grade}}</td>
+									<td><button type="button" class="btn btn-default btn-xs" title="Remove" ng-click="remove($index)">&#10006;</button></td>
 								</tr>
 								<tr>
-									<td colspan="3"  class="text-right lead">GPA: {{gpa}}</td>
+									<td colspan="4" class="text-right lead">GPA: {{gpa}}</td>
 								</tr>
 							</tbody>
 						</table>
