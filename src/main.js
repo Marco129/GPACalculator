@@ -1,5 +1,8 @@
 'use strict';
 
+require('bootstrap/dist/css/bootstrap.css');
+require('angular');
+
 angular.module('gpa', [])
 	.controller('gpaController', function($scope, $rootScope){
 		$scope.gpa = 0;
